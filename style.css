@@ -29,7 +29,6 @@ h2 {
   color: #374151;
 }
 
-/* Compact Sections */
 section {
   background: #ffffff;
   border: 1px solid #e5e7eb;
@@ -39,7 +38,6 @@ section {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
-/* Form Styles - Compact & Flex */
 section:first-of-type {
   display: flex;
   flex-wrap: wrap;
@@ -80,7 +78,6 @@ input:focus {
   box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.15);
 }
 
-/* Buttons */
 button {
   font-family: inherit;
   font-size: 0.85rem;
@@ -92,7 +89,6 @@ button {
   transition: all 0.15s ease;
 }
 
-/* Save Product Button */
 button[onclick="saveProduct()"] {
   background-color: #2563eb;
   color: #ffffff;
@@ -102,7 +98,6 @@ button[onclick="saveProduct()"]:hover {
   background-color: #1d4ed8;
 }
 
-/* Clear Button */
 button[onclick="clearForm()"] {
   background-color: #ffffff;
   color: #4b5563;
@@ -121,14 +116,12 @@ hr {
   margin: 1.5rem 0;
 }
 
-/* Product list container */
 #productList {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 1rem;
 }
 
-/* Product card using grid */
 .product {
   background: #ffffff;
   border: 1px solid #e5e7eb;
@@ -163,7 +156,6 @@ hr {
   line-height: 1.4;
 }
 
-/* Description paragraph layout */
 .product p:first-of-type {
   min-height: 2.8em;
   overflow: hidden;
@@ -174,7 +166,6 @@ hr {
   color: #6b7280;
 }
 
-/* Price */
 .product p:nth-of-type(2) {
   font-size: 0.95rem;
   font-weight: 700;
@@ -183,14 +174,12 @@ hr {
   font-family: monospace, monospace;
 }
 
-/* Stock */
 .product p:nth-of-type(3) {
   font-size: 0.75rem;
   color: #6b7280;
   margin-bottom: 0.5rem;
 }
 
-/* Product action buttons */
 .product button {
   width: 100%;
   padding: 0.35rem 0.5rem;
@@ -230,7 +219,6 @@ hr {
   background-color: #047857;
 }
 
-/* Responsive adjustments */
 @media (max-width: 600px) {
   section:first-of-type {
     flex-direction: column;
