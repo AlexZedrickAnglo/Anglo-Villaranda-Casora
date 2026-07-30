@@ -1,0 +1,175 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+    padding:40px;
+}
+
+h1{
+    text-align:center;
+    color:#2563eb;
+    margin-bottom:30px;
+    font-size:2.2rem;
+}
+
+section{
+    max-width:700px;
+    margin:20px auto;
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+h2{
+    margin-bottom:20px;
+    color:#444;
+}
+
+label{
+    display:block;
+    margin-bottom:15px;
+    font-weight:500;
+}
+
+input{
+    width:100%;
+    margin-top:8px;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:15px;
+    transition:.3s;
+}
+
+input:focus{
+    border-color:#2563eb;
+    outline:none;
+    box-shadow:0 0 8px rgba(37,99,235,.2);
+}
+
+button{
+    padding:12px 22px;
+    margin-top:10px;
+    margin-right:10px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s;
+}
+
+button:first-of-type{
+    background:#2563eb;
+    color:#fff;
+}
+
+button:first-of-type:hover{
+    background:#1d4ed8;
+}
+
+button:last-of-type{
+    background:#ef4444;
+    color:white;
+}
+
+button:last-of-type:hover{
+    background:#dc2626;
+}
+
+hr{
+    margin:40px auto;
+    max-width:700px;
+    border:none;
+    border-top:1px solid #ddd;
+}
+
+#productList{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+    gap:20px;
+}
+
+.product-card{
+    background:white;
+    border-radius:12px;
+    padding:18px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-5px);
+}
+
+.product-card h3{
+    color:#2563eb;
+    margin-bottom:8px;
+}
+
+.product-card p{
+    margin:6px 0;
+    color:#555;
+}
+
+.product-card .price{
+    font-size:20px;
+    font-weight:bold;
+    color:#16a34a;
+}
+
+.product-card .stock{
+    color:#ea580c;
+    font-weight:600;
+}
+
+.actions{
+    margin-top:15px;
+}
+
+.actions button{
+    width:48%;
+    margin:0;
+}
+
+.edit-btn{
+    background:#f59e0b;
+    color:white;
+}
+
+.edit-btn:hover{
+    background:#d97706;
+}
+
+.delete-btn{
+    background:#ef4444;
+    color:white;
+}
+
+.delete-btn:hover{
+    background:#dc2626;
+}
+
+@media(max-width:768px){
+    body{
+        padding:15px;
+    }
+
+    section{
+        padding:20px;
+    }
+
+    #productList{
+        grid-template-columns:1fr;
+    }
+}
